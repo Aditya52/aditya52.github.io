@@ -184,7 +184,8 @@ ul.header-w3_pvt li span {
 }
 
 .bg-theme {
-    background: #ff4f81;
+    /*background: #ff4f81;*/
+    background: #123;
 }
 
 /*-- //header --*/
@@ -621,7 +622,7 @@ ul.social-iconsv2 li:last-child {
     text-transform: capitalize;
     margin: 0 auto;
     width: 100%;
-    background: #ff4f81;
+    background: #123;
 }
 
 .modal-body {
@@ -640,12 +641,26 @@ ul.social-iconsv2 li:last-child {
     padding: 5em 13em 10em 0;
 }
 
+.about-left-bg {
+    min-height: 70vh;
+}
+
+.about-left-bg {
+    background: url(../images/g1.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .about-right-bg {
     min-height: 70vh;
 }
 
 .about-right-bg {
     background: url(../images/p1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-right1-bg {
+    background: url(../images/g4.jpg) no-repeat center;
     background-size: cover;
 }
 

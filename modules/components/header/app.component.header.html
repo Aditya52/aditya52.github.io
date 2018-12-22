@@ -2,23 +2,32 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <h1>
             <a class="navbar-brand text-white" href="#/home">
-                Trips
+                Pahadi Trekkers
             </a>
         </h1>
         <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto text-center">
-                <li class="nav-item active  mr-lg-3 mt-lg-0 mt-sm-3">
+            <ul ng-init="activeIndex = 1" class="navbar-nav ml-lg-auto text-center">
+                <li ng-class="{'active':activeIndex ==1}" class="nav-item mr-lg-3 mt-lg-0 mt-sm-3" ng-click="activeIndex = 1">
                     <a class="nav-link" href="" data-blast="color">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                <li ng-class="{'active':activeIndex ==2}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 2">
                     <a class="nav-link scroll" href="#about">About</a>
                 </li>
-                <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
+                <li ng-class="{'active':activeIndex ==3}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 3">
+                    <a class="nav-link scroll" href="#plans">Packages</a>
+                </li>
+                <li ng-class="{'active':activeIndex==4}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 4">
+                    <a class="nav-link scroll" href="#discover">Discover</a>
+                </li>
+                <li ng-class="{'active':activeIndex == 5}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 5">
+                    <a class="nav-link scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <!-- <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         Dropdown
@@ -31,7 +40,7 @@
                         <a class="dropdown-item scroll" href="#portfolio">portfolio</a>
                         <a class="dropdown-item scroll" href="#posts">latest posts</a>
                     </div>
-                </li>
+                </li> -->
                 <li class="nav-item  mt-lg-0 mt-3">
                     <a class="nav-link scroll" href="#contact">Contact</a>
                 </li>
