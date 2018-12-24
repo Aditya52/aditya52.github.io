@@ -5,43 +5,29 @@
                 Pahadi Trekkers
             </a>
         </h1>
-        <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ml-md-auto" type="button" ng-click="headerCtrl.active = false">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul ng-init="activeIndex = 1" class="navbar-nav ml-lg-auto text-center">
-                <li ng-class="{'active':activeIndex ==1}" class="nav-item mr-lg-3 mt-lg-0 mt-sm-3" ng-click="activeIndex = 1">
+        <div class="navbar-collapse" id="navbarSupportedContent" ng-style="{'display': (headerCtrl.active ? 'none': '')}">
+            <ul class="navbar-nav ml-lg-auto text-center">
+                <li class="nav-item mr-lg-3 mt-lg-0 mt-sm-3" ng-click="headerCtrl.active = true">
                     <a class="nav-link" href="" data-blast="color">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li ng-class="{'active':activeIndex ==2}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 2">
+                <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
                     <a class="nav-link scroll" href="#about">About</a>
                 </li>
-                <li ng-class="{'active':activeIndex ==3}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 3">
+                <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
                     <a class="nav-link scroll" href="#plans">Packages</a>
                 </li>
-                <li ng-class="{'active':activeIndex==4}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 4">
+                <li lass="nav-item  mr-lg-3 mt-lg-0 mt-3"  ng-click="headerCtrl.active = true">
                     <a class="nav-link scroll" href="#discover">Discover</a>
                 </li>
-                <li ng-class="{'active':activeIndex == 5}" class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="activeIndex = 5">
+                <li  class="nav-item  mr-lg-3 mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
                     <a class="nav-link scroll" href="#portfolio">Portfolio</a>
                 </li>
-                <!-- <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item scroll" href="#services">services</a>
-                        <a class="dropdown-item scroll" href="#plans">pricing</a>
-                        <a class="dropdown-item scroll" href="#team">team</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item scroll" href="#portfolio">portfolio</a>
-                        <a class="dropdown-item scroll" href="#posts">latest posts</a>
-                    </div>
-                </li> -->
-                <li class="nav-item  mt-lg-0 mt-3">
+                <li  class="nav-item  mt-lg-0 mt-3" ng-click="headerCtrl.active = true">
                     <a class="nav-link scroll" href="#contact">Contact</a>
                 </li>
             </ul>
