@@ -181,6 +181,7 @@ ul.header-w3_pvt li span {
     position: fixed;
     z-index: 9999;
     width: 100%;
+    box-shadow: 0px 1px #fff;
 }
 
 
